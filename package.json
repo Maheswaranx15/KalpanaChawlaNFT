@@ -1,0 +1,37 @@
+{
+  "name": "rarible_sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "truffle migrate --reset --network rinkeby",
+    "verify": "truffle run verify BafNft721 BafNft1155 TransferProxy Trade --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://selvamramasamy@bitbucket.org/baf-crypto/rarible_sc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/baf-crypto/rarible_sc#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "truffle-plugin-verify": "^0.5.9"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "chai": "^4.3.6",
+    "dotenv": "^10.0.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "solc": "^0.8.5",
+    "solc-js": "^1.0.1",
+    "truffle-verify": "^1.0.8"
+  }
+}
